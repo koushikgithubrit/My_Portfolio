@@ -25,7 +25,8 @@
 //   } catch (error) {
 //     return NextResponse.json({ error });
 //   }
-// }import nodemailer from "nodemailer";
+// }
+import nodemailer from "nodemailer";
 
 export async function POST(req) {
   try {
@@ -42,7 +43,7 @@ export async function POST(req) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "koushikadakka2004@gmail.com", // Your Gmail address
+        user: "koushikadakka07@gmail.com", // Your Gmail address
         pass: "Ik@u$h!k@2004", // Gmail app password
       },
     });
@@ -50,7 +51,7 @@ export async function POST(req) {
     // Email options
     const mailOptions = {
       from: "koushikadakka07@gmail.com", // Sender address
-      to: `${email}, koushikadakka07@gmail.com`, // Send to visitor and yourself
+      to: `${email}, koushikadakka2004@gmail.com`, // Send to visitor and yourself
       subject: subject,
       html: `
         <div>
