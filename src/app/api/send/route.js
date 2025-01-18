@@ -2,7 +2,7 @@
 // import { Resend } from "resend";
 
 // const resend = new Resend(process.env.RESEND_API_KEY);
-// const fromEmail = "koushikadakka2004@gmail.com";
+// const fromEmail = "@gmail.com";
 
 // export async function POST(req, res) {
 //   const { email, subject, message } = await req.json();
@@ -43,15 +43,15 @@ export async function POST(req) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "koushikadakka07@gmail.com", // Your Gmail address
-        pass: "Ik@u$h!k@2004", // Gmail app password
+        user: "@gmail.com", // Your Gmail address
+        pass: "", // Gmail app password
       },
     });
 
     // Email options
     const mailOptions = {
-      from: "koushikadakka07@gmail.com", // Sender address
-      to: `${email}, koushikadakka2004@gmail.com`, // Send to visitor and yourself
+      from: "@gmail.com", // Sender address
+      to: `${email}, @gmail.com`, // Send to visitor and yourself
       subject: subject,
       html: `
         <div>
